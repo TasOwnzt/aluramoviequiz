@@ -4,7 +4,6 @@ import QuizHome from './quiz'
 function IndexPage() {
   return (
     <QuizHome>
-      <div>
         <Head>
           <title>Quiz Movie</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -24,7 +23,6 @@ function IndexPage() {
           <meta property="twitter:description" content="Projeto didático desenvolvido durante a Imersão React v2 do Alura" />
           <meta property="twitter:image" content="" />
         </Head>
-      </div>
     </QuizHome>
   )
 }
