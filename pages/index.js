@@ -15,13 +15,13 @@ function IndexPage() {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://aluramoviequiz.vercel.app/" />
           <meta property="og:description" content="Projeto didático desenvolvido durante a Imersão React v2 do Alura" />
-          <meta property="og:image" content="" />
+          <meta property="og:image" content="../src/imgs/Imersão React.png" />
 
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://aluramoviequiz.vercel.app/" />
           <meta property="twitter:title" content="Quiz Movie" />
           <meta property="twitter:description" content="Projeto didático desenvolvido durante a Imersão React v2 do Alura" />
-          <meta property="twitter:image" content="" />
+          <meta property="twitter:image" content="../src/imgs/Imersão React.png" />
         </Head>
     </QuizHome>
   )
