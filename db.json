@@ -1,28 +1,30 @@
 {
-    "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-    "title": "Quiz Movie",
-    "description": "Teste os seus conhecimentos sobre os filmes no geral",
+    "bg": "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1480&q=80",
+    "title": "Movie Quiz",
+    "description": "Teste os seus conhecimentos sobre os filmes do momento",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://78.media.tumblr.com/bc61b0b0eac14e7b5350530cc25e3283/tumblr_ph1yzyjy9o1uejrjoo1_1280.gif",
+        "title": "Quem vencerá a batalha do Godzilla vs King Kong?",
+        "description": "Essa é só para os fortes",
+        "answer": 0,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "King Kong",
+          "Godzilla",
+          "Kaiju",
+          "Outro"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "image": "https://64.media.tumblr.com/255b7b083cb4df499ad9dc508bd9f8b2/tumblr_n5unfyLAz51r5r8duo1_250.gif",
+        "title": "Ano de lançamento do primeiro filme de Godzilla?",
+        "description": "Essa eu quero ver se sabe mesmo",
+        "answer": 2,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "1998",
+           "2019",
+           "1954",
+           "2014"
         ]
       }
     ],
@@ -31,12 +33,12 @@
     ],
     "theme": {
       "colors": {
-        "primary": "#0d47a1",
-        "secondary": "#29b6f6",
-        "mainBg": "#171B35",
+        "primary": "#ff0000",
+        "secondary": "#b34301",
+        "mainBg": "#350303",
         "contrastText": "#FFFFFF",
-        "wrong": "#FF5722",
-        "success": "#4CAF50"
+        "wrong": "#e0582d",
+        "success": "#047d09"
       },
       "borderRadius": "4px"
     }

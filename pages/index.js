@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable no-console */
 import React from 'react';
 import styled from 'styled-components';
@@ -10,6 +11,8 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -18,7 +21,7 @@ import GitHubCorner from '../src/components/GitHubCorner';
 //   background-position: center;
 // `;
 
-export const QuizContainer = styled.div`
+const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -32,18 +35,17 @@ export const QuizContainer = styled.div`
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
-  console.log('Nostra algo', name, setName);
 
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Quiz Movie</title>
+        <title>{db.title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-        <meta name="title" content="Quiz Movie" />
+        <meta name="title" content="Movie Quiz" />
         <meta name="description" content="Projeto didático desenvolvido durante a Imersão React v2 do Alura" />
 
-        <meta property="og:title" content="Quiz Movie" />
+        <meta property="og:title" content="Movie Quiz" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://aluramoviequiz.vercel.app/" />
         <meta property="og:description" content="Projeto didático desenvolvido durante a Imersão React v2 do Alura" />
@@ -51,7 +53,7 @@ export default function Home() {
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://aluramoviequiz.vercel.app/" />
-        <meta property="twitter:title" content="Quiz Movie" />
+        <meta property="twitter:title" content="Movie Quiz" />
         <meta property="twitter:description" content="Projeto didático desenvolvido durante a Imersão React v2 do Alura" />
         <meta property="twitter:image" content="../src/imgs/Imersão React.png" />
 
@@ -62,32 +64,25 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Quiz Movie</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
+            <p>{db.description}</p>
             <form onSubmit={(infosDoEvento) => {
               infosDoEvento.preventDefault();
-
               router.push(`/quiz?name=${name}`);
-
               console.log('Fazendo uma submissão por meio do react');
-
-              // router manda para a próxima página
             }}
             >
-              <input
-                onChange={(infosDoEvento) => {
-                  console.log(infosDoEvento.target.value);
-                  // State
-                  // name = infosDoEvento.target.value;
-                  setName(infosDoEvento.target.value);
-                }}
-                placeholder="Nome de jogador"
+              <Input
+                name="nomeDoUsuario"
+                onChange={(evnt) => setName(evnt.target.value)}
+                placeholder="Nome do jogador"
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar
-                { name}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
@@ -95,8 +90,6 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
         <Footer />
