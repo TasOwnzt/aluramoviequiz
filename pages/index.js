@@ -144,7 +144,7 @@ export default function Home() {
           animate="show"
         />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/TasOwnzt" />
+      <GitHubCorner projectUrl="https://github.com/TasOwnzt/aluramoviequiz" />
     </QuizBackground>
   );
 }
