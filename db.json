@@ -1,12 +1,12 @@
 {
     "bg": "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1480&q=80",
     "title": "Movie Quiz",
-    "description": "Teste os seus conhecimentos sobre os filmes do momento",
+    "description": "Teste os seus conhecimentos sobre os filmes e séries do momento",
     "questions": [
       {
         "image": "https://78.media.tumblr.com/bc61b0b0eac14e7b5350530cc25e3283/tumblr_ph1yzyjy9o1uejrjoo1_1280.gif",
         "title": "Quem vencerá a batalha do Godzilla vs King Kong?",
-        "description": "Essa é só para os fortes",
+        "description": "Que começe os jogos ou melhor as tretas",
         "answer": 0,
         "alternatives": [
           "King Kong",
@@ -26,13 +26,51 @@
            "1954",
            "2014"
         ]
+      },
+	  {
+        "image": "https://media.giphy.com/media/YmbxC8Bkj9bZ4yu4Le/giphy.gif",
+        "title": "Qual o nome do bebê que acompanha o Din Djarin(Mando)?",
+        "description": "Essa eu quero ver se sabe mesmo",
+        "answer": 2,
+        "alternatives": [
+           "A criança",
+           "Baby Yoda",
+           "Grogu"
+        ]
+      },
+	  {
+        "image": "https://media.giphy.com/media/Ken6Yg5n7bYStW4JYB/giphy.gif",
+        "title": "Qual é a idade da criança na série O Mandaloriano?",
+        "description": "Vamos ver quem acerta essa em kk",
+        "answer": 1,
+        "alternatives": [
+           "2 anos",
+           "50 anos",
+           "10 anos",
+		   "1 ano"
+        ]
+      },
+	  {
+        "image": "https://media.giphy.com/media/H3x6vmjuvJ4fxIQDko/giphy.gif",
+        "title": "Quem é o personagem surpresa que aparece pra resgatar a criança?",
+        "description": "Olha cuidado com a resposta!",
+        "answer": 0,
+        "alternatives": [
+           "Luke Skywalker",
+           "Han Solo",
+           "Darth Vader",
+		   "R2D2"
+        ]
       }
     ],
     "external": [
+      "https://quiz-interstellar.dotjorge.vercel.app/",
+      "https://mr-robot-quiz-alura.bryanauta.vercel.app/",
       "https://flash-quiz-next.davidlpc1.vercel.app/",
       "https://alura-quiz-avengers.fernanda-kipper.vercel.app/",
       "https://harry-potter-quiz.brunogerbasi.vercel.app/",
-      "https://breaking-bad-quiz.eliasnepo.vercel.app/"
+      "https://breaking-bad-quiz.eliasnepo.vercel.app/",
+      "https://cinequiz.adsonnovaes.vercel.app/"
     ],
     "theme": {
       "colors": {
